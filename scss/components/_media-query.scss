@@ -7,7 +7,7 @@
 ////
 
 @media only screen and (max-width: #{$global-breakpoint}) {
-  table.body img {
+  table.body img.responsive {
     width: auto !important;
     height: auto !important;
   }
@@ -30,7 +30,7 @@
     box-sizing: border-box;
     padding-left: $global-gutter !important;
     padding-right: $global-gutter !important;
-    
+
     // Nested columns won't double the padding
     .column,
     .columns {
@@ -94,7 +94,7 @@
   //menu
   table.menu {
     width: 100% !important;
-    
+
     td,
     th {
       width: auto !important;
@@ -114,18 +114,18 @@
     width: auto !important;
   }
 
-// Rules for the Center Tag    
- // @for $i from 1 through ($grid-column-count - 1 ) {   
- //   .body .columns td.small-#{$i},    
- //   .body .column td.small-#{$i},   
- //   td.small-#{$i} center,    
-   
- //   .body .columns th.small-#{$i},    
- //   .body .column th.small-#{$i},   
- //   th.small-#{$i} center {   
- //     display: inline-block !important;   
- //     width: -zf-grid-calc-pct($i, $grid-column-count) !important;    
- //   }   
+// Rules for the Center Tag
+ // @for $i from 1 through ($grid-column-count - 1 ) {
+ //   .body .columns td.small-#{$i},
+ //   .body .column td.small-#{$i},
+ //   td.small-#{$i} center,
+
+ //   .body .columns th.small-#{$i},
+ //   .body .column th.small-#{$i},
+ //   th.small-#{$i} center {
+ //     display: inline-block !important;
+ //     width: -zf-grid-calc-pct($i, $grid-column-count) !important;
+ //   }
  // }
 
   // expanded buttons anchor width
@@ -138,4 +138,3 @@
     }
   }
 }
-
